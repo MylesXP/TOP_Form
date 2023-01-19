@@ -22,18 +22,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    /* height: 60vh; */
 }
 
 #form_leftside{
     background-color: red;
-    height: 100%;
+    /* height: auto; */
     position: relative;
     width: 30vh;
     background-image: url("/image/leaves.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    align-self: stretch;
 }
 
 #pic_banner {
@@ -64,7 +65,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(249,250,251);
-    height: 100%;
+    /* height: auto; */
     width: 40%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -102,6 +103,10 @@ form{
     padding-block: 2%;
 }
 
+.form-input--row > div > input{
+    width: 80%;
+}
+
 .form-input--row>div:first-child>input {
     margin-right: 3rem;
 }
@@ -115,4 +120,41 @@ label {
     letter-spacing: 1.5px;
     font-weight: bolder;
     display: block;
+}
+
+.text-column--account {
+    margin-inline: 40px;
+    margin-top: 25px;
+}
+
+.text-column--account>button {
+    padding-inline: 40px;
+    padding-block: 10px;
+    font-size: .7rem;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+    background-color: #596D48;
+    color: white;
+}
+
+.text-column--account>p {
+    font-size: 13px;
+    margin-top: 25px;
+    margin-bottom: 20%;
+}
+
+@media only screen and (max-width: 900px) {
+    .form-input--row > div > input{
+        width: 90%;
+    }
+    
+    .form-input--row>div:first-child>input {
+        margin-right: 0;
+    }
+
+    .form-input--row>div>label {
+        font-size: .4rem;
+    }
 }
