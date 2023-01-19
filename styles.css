@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#form_leftside{
+    background-color: red;
+    height: 50%;
+    position: relative;
+    width: 20%;
+}
+
+#credit{
+    color: lightgray;
+    font-size: .6rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+#form_rightside{
+    background-color: white;
+    height: 50%;
+    width: 50%;
+}
+
