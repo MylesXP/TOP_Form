@@ -145,6 +145,68 @@ label {
     margin-bottom: 20%;
 }
 
+@media only screen and (max-width: 800px) {
+    /* .form-input--row>div>input {
+        width: 90%;
+    }
+
+    .form-input--row>div:first-child>input {
+        margin-right: 0;
+    }
+
+    .form-input--row>div>label {
+        font-size: .4rem;
+    } */
+
+    #pic_banner{
+        margin-top: 20%;
+
+        margin-bottom: 20%;
+        /* height: 40vh; */
+    }
+
+    #form-container {
+        flex-direction: column;
+    }
+
+    #form_leftside {
+        width: 100%;
+        align-self: center;
+    }
+
+    #form_title{
+        text-align: center;
+    }
+
+    .form-input--row>div>input {
+       margin-bottom: 8%;
+    }
+
+    #form_rightside {
+        width: 100%;
+    }
+
+    #form_rightside--header {
+        font-size: .6rem;
+        padding-inline: 3%;
+    }
+
+    #form_rightside--form {
+        padding-inline: 3%;
+    }
+
+    .form-input--row{
+        flex-direction: column;
+        align-items: center;
+        padding-block: 0;
+        text-align: center;
+    }
+
+    .text-column--account {
+        text-align: center;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .form-input--row>div>input {
         width: 90%;
