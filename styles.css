@@ -147,20 +147,21 @@ label {
     margin-bottom: 20%;
 }
 
-@media only screen and (max-width: 600px) {
-    /* .form-input--row>div>input {
-        width: 90%;
+@media only screen and (max-width: 319px) {
+    #pic_banner {
+        margin-top: 100% !important;
+        margin-bottom: 30% !important;
     }
 
-    .form-input--row>div:first-child>input {
-        margin-right: 0;
+    .text-column--account>button {
+        font-size: 12px;
     }
 
-    .form-input--row>div>label {
-        font-size: .4rem;
-    } */
+    .text-column--account>p {
+        font-size: 10px;
+    }
 
-    #pic_banner{
+    #pic_banner {
         margin-top: 20%;
         margin-bottom: 20%;
         /* height: 40vh; */
@@ -176,7 +177,7 @@ label {
         align-self: center;
     }
 
-    #form_title{
+    #form_title {
         text-align: center;
     }
 
@@ -186,7 +187,7 @@ label {
 
     .form-input--row>div>input {
         width: 100% !important;
-       margin-bottom: 8%;
+        margin-bottom: 8%;
     }
 
     #form_rightside {
@@ -202,7 +203,7 @@ label {
         padding-inline: 3%;
     }
 
-    .form-input--row{
+    .form-input--row {
         flex-direction: column;
         align-items: center;
         padding-block: 0;
@@ -213,6 +214,160 @@ label {
         text-align: center;
     }
 }
+
+@media only screen and (min-width: 320px) {
+    #pic_banner {
+        margin-top: 60% !important;
+        margin-bottom: 30% !important;
+    }
+
+    .text-column--account>button {
+        font-size: .6rem;
+    }
+
+    .text-column--account>p {
+        font-size: .6rem;
+    }
+
+    #pic_banner {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    #form-container {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    #form_leftside {
+        width: 100%;
+        align-self: center;
+    }
+
+    #form_title {
+        text-align: center;
+    }
+
+    label {
+        text-align: left;
+    }
+
+    .form-input--row>div>input {
+        width: 100% !important;
+        margin-bottom: 8%;
+    }
+
+    #form_rightside {
+        width: 100%;
+    }
+
+    #form_rightside--header {
+        font-size: .6rem;
+        padding-inline: 3%;
+    }
+
+    #form_rightside--form {
+        padding-inline: 3%;
+    }
+
+    .form-input--row {
+        flex-direction: column;
+        align-items: center;
+        padding-block: 0;
+        text-align: center;
+    }
+
+    .text-column--account {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width: 425px) {
+    .text-column--account>button {
+        font-size: .7rem;
+    }
+
+    .text-column--account>p {
+        font-size: .7rem;
+    }
+
+    .form-input--row {
+        justify-content: center;
+    }
+
+    .form-input--row>div>input {
+        width: 12rem !important;
+        margin-bottom: 8%;
+    }
+}
+
+/* @media only screen and (min-width: 320px) {
+    #pic_banner {
+        margin-top: 40% !important;
+    }
+
+    .text-column--account>button {
+        font-size: .6rem;
+    }
+
+    .text-column--account>p {
+        font-size: .6rem;
+    }
+
+    #pic_banner {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    #form-container {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    #form_leftside {
+        width: 100%;
+        align-self: center;
+    }
+
+    #form_title {
+        text-align: center;
+    }
+
+    label {
+        text-align: left;
+    }
+
+    .form-input--row>div>input {
+        width: 100% !important;
+        margin-bottom: 8%;
+    }
+
+    #form_rightside {
+        width: 100%;
+    }
+
+    #form_rightside--header {
+        font-size: .6rem;
+        padding-inline: 3%;
+    }
+
+    #form_rightside--form {
+        padding-inline: 3%;
+    }
+
+    .form-input--row {
+        flex-direction: column;
+        align-items: center;
+        padding-block: 0;
+        text-align: center;
+    }
+
+    .text-column--account {
+        text-align: center;
+    }
+
+} */
 
 @media only screen and (max-width: 900px) {
     .form-input--row>div>input {
