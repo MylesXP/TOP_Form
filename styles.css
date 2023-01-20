@@ -29,7 +29,9 @@ body {
     background-color: red;
     /* height: auto; */
     position: relative;
-    width: 30vh;
+    /* width: 30vw; */
+    width: clamp(250px, 30vw, 15vw);
+    /* width: max(30vw,300px); */
     background-image: url("image/leaves.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -145,7 +147,7 @@ label {
     margin-bottom: 20%;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     /* .form-input--row>div>input {
         width: 90%;
     }
@@ -160,13 +162,13 @@ label {
 
     #pic_banner{
         margin-top: 20%;
-
         margin-bottom: 20%;
         /* height: 40vh; */
     }
 
     #form-container {
         flex-direction: column;
+        padding: 5px;
     }
 
     #form_leftside {
@@ -178,7 +180,12 @@ label {
         text-align: center;
     }
 
+    label {
+        text-align: left;
+    }
+
     .form-input--row>div>input {
+        width: 100% !important;
        margin-bottom: 8%;
     }
 
